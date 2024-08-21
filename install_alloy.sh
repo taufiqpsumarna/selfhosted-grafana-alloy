@@ -19,9 +19,9 @@ apt-get install -y alloy
 
 echo "Copy config.alloy to $ALLOY_CONFIG_DIR"
 cp $ALLOY_CONFIG_DIR $ALLOY_CONFIG_DIR/config.alloy.bak
-cp .config/alloy/config.alloy $ALLOY_CONFIG_DIR
+cp .client/alloy/config.alloy $ALLOY_CONFIG_DIR
 
-echo "Enable docker integration"
+echo "Enable docker integration (optional)" #You can disable this option
 usermod -a -G docker alloy
 sed -i 's/User=alloy/User=root/' "$ALLOY_SERVICE_FILE"
 systemctl daemon-reload
