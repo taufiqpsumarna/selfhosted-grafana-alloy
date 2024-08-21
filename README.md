@@ -44,3 +44,6 @@ Grafana Alloy is a vendor-neutral distribution of the OpenTelemetry (OTel) Colle
     sudo chmod +x install_alloy.sh
     ./install_alloy.sh
     ```
+
+## Medium Post
+https://medium.com/@taufiqpsumarna/how-to-configure-grafana-alloy-with-self-hosted-prometheus-and-loki-server-cf4cb783eecf
